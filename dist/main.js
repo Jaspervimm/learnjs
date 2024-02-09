@@ -9,17 +9,6 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/style.scss":
-/*!************************!*\
-  !*** ./src/style.scss ***!
-  \************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://learnjs/./src/style.scss?");
-
-/***/ }),
-
 /***/ "./src/common.js":
 /*!***********************!*\
   !*** ./src/common.js ***!
@@ -48,7 +37,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _esmodule_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./esmodule.js */ \"./src/esmodule.js\");\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.scss */ \"./src/style.scss\");\nconst common = __webpack_require__(/*! ./common.js */ \"./src/common.js\");\r\ncommon.hello();\r\n\r\n_esmodule_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"].hello();\r\nconsole.log('Hello HMR!');\r\n\n\n//# sourceURL=webpack://learnjs/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _esmodule_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./esmodule.js */ \"./src/esmodule.js\");\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.scss */ \"./src/style.scss\");\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_style_scss__WEBPACK_IMPORTED_MODULE_1__);\nconst common = __webpack_require__(/*! ./common.js */ \"./src/common.js\");\r\ncommon.hello();\r\n\r\n_esmodule_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"].hello();\r\nconsole.log('Hello HMR!');\r\n\n\n//# sourceURL=webpack://learnjs/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/style.scss":
+/*!************************!*\
+  !*** ./src/style.scss ***!
+  \************************/
+/***/ (() => {
+
+eval("throw new Error(\"Module parse failed: Unexpected token (2:5)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n| $bgcolor: coral;\\n> body {\\n|     background-color: darken($bgcolor, 30);\\n| }\");\n\n//# sourceURL=webpack://learnjs/./src/style.scss?");
 
 /***/ })
 
@@ -79,6 +78,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _esm
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
